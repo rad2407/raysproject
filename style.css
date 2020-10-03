@@ -33,6 +33,10 @@ p {
 	letter-spacing: .05rem;
 }
 
+
+
+
+
 .hire{
     color: crimson;
     text-decoration: underline;
@@ -41,15 +45,25 @@ p {
 
 .hero p{
     color: white;
-    font-size: 2.4rem;
+	font-size: 2.9rem;
+	font-weight: normal;
+	line-height: 120%;
     
 }
 
-.hero p:hover{
+.line-top{
+	margin-bottom: 20px;
+}
+
+.line-bottom{
+	margin-top: 20px;
+}
+
+/* .hero p:hover{
     font-size: 3.5rem;
     transition: .5s ease-out;
     
-}
+} */
 
 
 .section-title {
@@ -290,17 +304,19 @@ p {
 #services .services {
 	flex-direction: column;
 	text-align: center;
-	max-width: 1500px;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 50px 0;
 }
 #services .service-top {
-	max-width: 500px;
+	max-width: 800px;
 	margin: 0 auto;
+	text-align: justify;
+	padding: 20px;
 }
 #services .service-bottom {
 	display: flex;
-	align-items: center;
+	/* align-items: center; */  /*set height of each item equally*/
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-top: 50px;
@@ -373,6 +389,8 @@ p {
 	margin: 20px auto;
 	overflow: hidden;
 	border-radius: 10px;
+	padding: 0 20px;
+	
 }
 #projects .project-info {
 	padding: 30px;
@@ -474,11 +492,14 @@ p {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
+	background-color: turquoise;
+	
 }
 #contact .contact-items {
 	width: 400px;
 }
 #contact .contact-item {
+	
 	width: 80%;
 	padding: 20px;
 	text-align: center;
@@ -584,6 +605,12 @@ p {
 		font-weight: 500;
 	}
 }
+
+
+
+
+
+  
 /* End Keyframes */
 
 /* Media Query For Tablet */
@@ -692,7 +719,7 @@ p {
 /* End Media Query For Tablet */
 
 /* Media Query For Desktop */
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1200px) {
 	/* header */
 	#header .hamburger {
 		display: none;
