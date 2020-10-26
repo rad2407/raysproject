@@ -32,40 +32,6 @@ p {
 	font-weight: 300;
 	letter-spacing: .05rem;
 }
-
-
-
-
-
-.hire{
-    color: crimson;
-    text-decoration: underline;
-    font-weight: 700;
-}
-
-.hero p{
-    color: white;
-	font-size: 2.9rem;
-	font-weight: normal;
-	line-height: 120%;
-    
-}
-
-.line-top{
-	margin-bottom: 20px;
-}
-
-.line-bottom{
-	margin-top: 20px;
-}
-
-/* .hero p:hover{
-    font-size: 3.5rem;
-    transition: .5s ease-out;
-    
-} */
-
-
 .section-title {
 	font-size: 4rem;
 	font-weight: 300;
@@ -94,9 +60,7 @@ p {
 }
 .cta:hover {
 	color: white;
-    background-color: crimson;
-    font-size: 2.5rem;
-    transition: .3s ease;
+	background-color: crimson;
 }
 .brand h1 {
 	font-size: 3rem;
@@ -304,19 +268,17 @@ p {
 #services .services {
 	flex-direction: column;
 	text-align: center;
-	max-width: 1200px;
+	max-width: 1500px;
 	margin: 0 auto;
-	padding: 50px 0;
+	padding: 100px 0;
 }
 #services .service-top {
-	max-width: 800px;
+	max-width: 500px;
 	margin: 0 auto;
-	text-align: justify;
-	padding: 20px;
 }
 #services .service-bottom {
 	display: flex;
-	/* align-items: center; */  /*set height of each item equally*/
+	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-top: 50px;
@@ -369,7 +331,7 @@ p {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
-	/* padding: 50px 0; */
+	padding: 100px 0;
 }
 #projects .projects-header h1 {
 	margin-bottom: 50px;
@@ -389,8 +351,6 @@ p {
 	margin: 20px auto;
 	overflow: hidden;
 	border-radius: 10px;
-	padding: 0 20px;
-	
 }
 #projects .project-info {
 	padding: 30px;
@@ -445,7 +405,7 @@ p {
 	text-align: center;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 50px 20px;
+	padding: 100px 20px;
 }
 #about .col-left {
 	width: 250px;
@@ -492,14 +452,11 @@ p {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
-	background-color: turquoise;
-	
 }
 #contact .contact-items {
 	width: 400px;
 }
 #contact .contact-item {
-	
 	width: 80%;
 	padding: 20px;
 	text-align: center;
@@ -605,12 +562,6 @@ p {
 		font-weight: 500;
 	}
 }
-
-
-
-
-
-  
 /* End Keyframes */
 
 /* Media Query For Tablet */
@@ -719,7 +670,7 @@ p {
 /* End Media Query For Tablet */
 
 /* Media Query For Desktop */
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 	/* header */
 	#header .hamburger {
 		display: none;
